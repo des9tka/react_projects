@@ -1,0 +1,33 @@
+body, html {
+    background: #282c34;
+}
+
+.launch {
+    border: 1px solid black;
+    width: 160px;
+    text-align: center;
+    margin: 5px;
+    border-radius: 25px;
+    background: cornsilk;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+}
+
+.name {
+    background: cadetblue;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 5px;
+    color: #282c34;
+}
+
+.year {
+    background: cadetblue;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 5px;
+    color: #282c34;
+}
