@@ -1,0 +1,12 @@
+.Car {
+    border: 1px solid black;
+    margin: 5px;
+    align-items: center;
+    width: 15%;
+    height: 15%;
+    text-align: center;
+}
+
+.but button {
+    margin: 3px;
+}
