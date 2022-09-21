@@ -12,9 +12,9 @@ const Cars = () => {
     },[])
     return (
         <div>
-            <CarForm/>
+            <CarForm setCars={setCars}/>
             <hr/>
-            {cars.map(car => <Car car={car} key={car.id}/>)}
+            {cars.map(car => <Car car={car} key={car.id} setCars={setCars}/>)}
         </div>
     )
 }
