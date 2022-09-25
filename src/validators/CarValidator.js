@@ -8,7 +8,7 @@ const carValidator = Joi.object({
         'string.pattern.base': 'Min: 0, max: 1 000 000'
     }),
     year: Joi.number().min(1990).max(new Date().getFullYear()).required().messages({
-        'string.pattern.base': 'Min: 1990, max: 2022'
+        'string.pattern.base': 'Min: 1990, max: now year'
     })
 })
 

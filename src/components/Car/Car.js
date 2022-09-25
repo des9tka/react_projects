@@ -1,7 +1,7 @@
 import css from './Car.module.css'
 import {carService} from "../../sevices";
 
-const Car = ({car, setCars}) => {
+const Car = ({car, setCars, setUpdateCar}) => {
     const {id, model, price, year} = car;
 
     const deleteCar = async () => {
@@ -11,7 +11,6 @@ const Car = ({car, setCars}) => {
             cars.splice(index, 1)
             return ([...cars])
         })
-
     }
 
     
@@ -24,7 +23,7 @@ const Car = ({car, setCars}) => {
                 <div>year: {year}</div>
             </div>
             <div className={css.but}>
-                <button>update</button>
+                <button onClick={() => setUpdateCar(car)}>update</button>
                 <button onClick={() => deleteCar()}>delete</button>
             </div>
         </div>
