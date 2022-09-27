@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
 
 const CommentsBuilder = ({comment}) => {
     return (
@@ -9,7 +9,7 @@ const CommentsBuilder = ({comment}) => {
             <div>email: {comment.email}</div>
             <div>body: {comment.body}</div>
 
-            <Link to={'/posts/' + comment.postId}>CheckPost</Link>
+            <Link to={'posts/' + comment.postId}>CheckPost</Link>
         </div>
     )
 }

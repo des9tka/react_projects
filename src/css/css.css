@@ -3,10 +3,11 @@
     justify-content: space-evenly;
 }
 
-.todosWrap, .albumsWrap, .commentsWrap {
+.todosWrap, .albumsWrap, .commentsWrap, .postWrap {
     border: 1px solid black;
     margin: 10px;
     padding: 3px;
+    border-radius: 25px;
 }
 
 

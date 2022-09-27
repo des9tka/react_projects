@@ -20,11 +20,12 @@ function App() {
       <hr/>
 
       <Routes>
-          <Route index element={<Home/>}></Route>
-          <Route path={'todos'} element={<Todos/>}></Route>
-          <Route path={'albums'} element={<Albums/>}></Route>
-          <Route path={'comments'} element={<Comments/>}></Route>
-          <Route path={'posts/:id'} element={<CheckPost/>}></Route>
+          <Route index element={<Home/>}/>
+          <Route path={'todos'} element={<Todos/>}/>
+          <Route path={'albums'} element={<Albums/>}/>
+          <Route path={'comments'} element={<Comments/>}>
+            <Route path={'posts/:id'} element={<CheckPost/>}/>
+          </Route>
       </Routes>
     </div>
   );

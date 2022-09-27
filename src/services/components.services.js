@@ -14,7 +14,7 @@ const commentsService = {
 }
 
 const postService = {
-    getAllById: (id) => axiosService.get(urls.posts, id)
+    getAllById: (id) => axiosService.get(`${urls.posts}/${id}`)
 }
 
 export {
