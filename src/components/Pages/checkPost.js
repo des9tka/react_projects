@@ -1,6 +1,7 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {postService} from "../../services/components.services";
+import {axiosService} from "../../services/axios.service";
 
 const CheckPost = () => {
     const params = useParams();
@@ -9,14 +10,12 @@ const CheckPost = () => {
 
     useEffect(() => {
         postService.getAllById(params.id).then(value => setPost(value.data))
-    }, [])
-
-
+        // axiosService.get(`/posts/${params.id}`).then(value => setPost(value.data))
+    }, [params.id])
 
     return (
-        <div>}
-            {/*{JSON.stringify(post.filter(value => value.id = params.id))}*/}
-        {/*    ????????????????????*/}
+        <div>
+            {console.log(post) }
         </div>
     )
 }
