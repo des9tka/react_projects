@@ -9,7 +9,7 @@ const CommentsBuilder = ({comment}) => {
             <div>email: {comment.email}</div>
             <div>body: {comment.body}</div>
 
-            <Link to={'posts/' + comment.postId}>CheckPost</Link>
+            <button onClick={() => {document.documentElement.scrollTop = 0;}}><Link to={'posts/' + comment.postId} className={'butt'}>CheckPost</Link></button>
         </div>
     )
 }

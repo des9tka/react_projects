@@ -10,4 +10,14 @@
     border-radius: 25px;
 }
 
+.butt {
+    text-decoration: none;
+}
+
+button {
+    margin: 3px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
 
